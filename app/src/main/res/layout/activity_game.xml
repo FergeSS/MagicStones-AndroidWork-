@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".game">
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="802dp"
+        android:layout_height="510dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottom_scene" />
+
+    <ImageView
+        android:id="@+id/fire1Left"
+        android:layout_width="46dp"
+        android:layout_height="61dp"
+
+        android:layout_marginStart="217dp"
+        android:layout_marginBottom="160dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView11"
+        app:layout_constraintStart_toStartOf="@id/imageView11"
+        app:srcCompat="@drawable/fire" />
+
+    <ImageView
+        android:id="@+id/fire1Right"
+        android:layout_width="46dp"
+        android:layout_height="61dp"
+
+        android:layout_marginEnd="307.5dp"
+        android:layout_marginBottom="157dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView11"
+        app:layout_constraintEnd_toEndOf="@id/imageView11"
+        app:srcCompat="@drawable/fire" />
+
+    <ImageView
+        android:id="@+id/fire2Right"
+        android:layout_width="46dp"
+        android:layout_height="61dp"
+
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="158dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView11"
+        app:layout_constraintEnd_toEndOf="@id/imageView11"
+        app:srcCompat="@drawable/fire2" />
+
+    <ImageView
+        android:id="@+id/fire2Left"
+        android:layout_width="46dp"
+        android:layout_height="61dp"
+
+        android:layout_marginStart="322dp"
+        android:layout_marginBottom="153dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView11"
+        app:layout_constraintStart_toStartOf="@id/imageView11"
+        app:srcCompat="@drawable/fire2" />
+
+
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="62dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_sel"
+        android:soundEffectsEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

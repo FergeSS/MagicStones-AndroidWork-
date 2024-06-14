@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="673dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/optionMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/select_option"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="@id/optionMenu"
+        app:layout_constraintEnd_toEndOf="@id/optionMenu"
+        app:layout_constraintStart_toStartOf="@id/optionMenu"
+        app:layout_constraintTop_toTopOf="@id/optionMenu">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="257dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/option1_sel"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="257dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/option2_sel"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="257dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/option3_sel"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="257dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/option4_sel"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="257dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/option5_sel"
+            android:button="@null"/>
+
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/buttonContinue"
+        android:layout_width="179dp"
+        android:layout_height="75dp"
+        android:background="@drawable/continue_sel"
+        android:clickable="false"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/optionMenu"
+        app:layout_constraintEnd_toEndOf="@id/optionMenu"
+        app:layout_constraintStart_toStartOf="@id/optionMenu"
+        app:layout_constraintTop_toTopOf="@id/optionMenu"
+        app:layout_constraintVertical_bias="0.88" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

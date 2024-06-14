@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="36dp"
+    app:layout_constraintVertical_bias="0.120000005">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="267dp"
+        android:layout_height="78dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/in_order_to_get_an_answer_to_the_question_select_and_click_on_any_stone" />
+
+    <ImageButton
+        android:id="@+id/stone1"
+        android:layout_width="146dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:background="@drawable/stone1" />
+
+    <ImageButton
+        android:id="@+id/stone2"
+        android:layout_width="125dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toEndOf="@+id/stone1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:background="@drawable/stone2" />
+
+    <ImageButton
+        android:id="@+id/stone3"
+        android:layout_width="156dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stone1"
+        android:background="@drawable/stone3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
