@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Magic Stones"
 include(":app")
- 
